@@ -1,0 +1,8 @@
+  eureka:
+  instance:
+    preferIpAddress: true
+    client:
+      fetch-registry: true
+      registerWithEureka: true
+      serviceUrl:
+      defaultZone: ${EUREKA_SERVER_ADDRESS:http://${eureka.instance.hostname}:${server.port}/eureka/}
